@@ -1,0 +1,32 @@
+{
+  "name": "express-next",
+  "version": "0.0.1",
+  "description": "A modern way for using Express.",
+  "main": "index.js",
+  "dependencies": {
+    "co": "^4.5.4"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "eslint": "^0.23.0",
+    "express": "^4.12.4",
+    "istanbul": "^0.3.16",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "test": "node --harmony node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha --check-leaks",
+    "test-travis": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisyip/express-next.git"
+  },
+  "author": "Chris Yip <i@chrisyip.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisyip/express-next/issues"
+  },
+  "homepage": "https://github.com/chrisyip/express-next#readme"
+}
