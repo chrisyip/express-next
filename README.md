@@ -53,7 +53,7 @@ Via [GitHub](https://github.com/chrisyip/express-next/graphs/contributors)
 [npm-url]: https://npmjs.org/package/express-next
 [npm-image]: http://img.shields.io/npm/v/express-next.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/chrisyip/express-next
-[daviddm-image]: http://img.shields.io/david/chrisyip/express-next.svg?style=flat-square
+[daviddm-image]: https://david-dm.org/chrisyip/express-next.svg?style=flat-square
 [travis-url]: https://travis-ci.org/chrisyip/express-next
 [travis-image]: http://img.shields.io/travis/chrisyip/express-next.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/chrisyip/express-next
