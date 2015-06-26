@@ -24,6 +24,12 @@
     "url": "git+https://github.com/chrisyip/express-next.git"
   },
   "author": "Chris Yip <i@chrisyip.im>",
+  "keywords": [
+    "express",
+    "generator",
+    "co",
+    "middleware"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chrisyip/express-next/issues"
