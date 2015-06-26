@@ -6,8 +6,14 @@ function isGenerator (input) {
 }
 
 function middlewareWrapper (middleware) {
+  if (middleware.length === 4) {
+    return function (err, req, res, next) {
+      co.wrap(middleware).call(this, err, req, res, next).catch(next)
+    }
+  }
+
   return function (req, res, next) {
-    co.wrap(middleware)(req, res, next).catch(next)
+    co.wrap(middleware).call(this, req, res, next).catch(next)
   }
 }
 

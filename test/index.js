@@ -36,6 +36,21 @@ describe('middleware', function () {
       .expect(200)
       .expect('123', done)
   })
+
+  it('error handler should work correctly', function (done) {
+    appNext.get('/404', function* () {
+      throw new Error('Nothing here')
+    })
+
+    appNext.use(function* (err, req, res, next) {
+      res.status(404).send(err.message + '!')
+      next()
+    })
+
+    request(appNext).get('/404')
+      .expect(404)
+      .expect('Nothing here!', done)
+  })
 })
 
 describe('app.get', function () {
