@@ -1,6 +1,6 @@
 {
   "name": "express-next",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A modern way for using Express.",
   "main": "index.js",
   "dependencies": {
